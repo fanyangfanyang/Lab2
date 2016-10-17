@@ -1,0 +1,27 @@
+body {background-image:url("images/background_image.png");
+      background-size:100%;
+      background-repeat:no-repeat;
+      text-align:center;
+      font-family:STXingkai;
+      font-size:40px;
+      margin-top:40px;
+      cursor:url('images/cursor/正常选择.ani'),auto;}
+      
+h3 {color:blue;
+    font-size:40px;}
+    
+table {font-size:25px;}
+    
+a  { text-decoration:none;}
+a:hover  { background-color:#ffff33;
+           cursor:url('images/cursor/链接选择.ani'),auto;}
+
+
+.button:active {
+	position: relative;
+	top: 1px;
+}
+
+S:form {cursor:url("images/cursor/文本选择.ani"),auto;}
+
+

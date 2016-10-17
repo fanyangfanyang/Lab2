@@ -1,0 +1,48 @@
+body {background-image:url("images/background_image.png");
+      background-size:100%;
+      background-repeat:no-repeat;
+      text-align:center;
+      font-family:STXingkai;
+      font-size:40px;
+      margin-top: 3cm;
+      cursor:url('images/cursor/正常选择.ani'),auto;}
+      
+h3 {color:blue;
+    font-size:60px;}
+    
+table {font-size:40px;}
+    
+a  { text-decoration:none;}
+a:hover  { background-color:#ffff33;
+           cursor:url('images/cursor/链接选择.ani'),auto;}
+
+.button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	width:100px;
+	height:40px;
+	cursor:url('images/cursor/正常选择.ani'),auto;
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
+
+S:form {cursor:url("images/cursor/文本选择.ani"),auto;}
+
+

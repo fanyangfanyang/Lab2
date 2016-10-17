@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="BookManagement" extends="struts-default">
+        <action name="showAllBooks" class="BookManagement.Book" method="showAllBooks">
+            <result>/showAllBooks.jsp</result>
+        </action> 
+        <action name="showAllAuthors" class="BookManagement.Author" method="showAllAuthors">
+            <result>/showAllAuthors.jsp</result>
+        </action> 
+        <action name="searchForAuthor">
+            <result>/searchForAuthor.jsp</result>
+        </action> 
+        <action name="searchAuthorResult" class="BookManagement.Author" method="searchForWorks">
+            <result name = "success">/searchAuthorResult.jsp</result>
+            <result name = "fail">/fail.jsp</result>
+        </action> 
+        <action name="addAuthor">
+            <result>/addAuthor.jsp</result>
+        </action> 
+        <action name="addAuthorResult" class="BookManagement.Author" method="addAuthor">
+            <result name = "success">/success.jsp</result>
+            <result name = "fail">/fail.jsp</result>
+        </action> 
+        <action name="addBook">
+            <result>/addBook.jsp</result>
+        </action> 
+        <action name="addBookResult" class="BookManagement.Book" method="addBook">
+            <result name = "success">/success.jsp</result>
+            <result name = "fail">/fail.jsp</result>
+            <result name = "noAuthor">/addAuthor.jsp</result>
+        </action> 
+        <action name= "bookInformation" class="BookManagement.Book" method="searchForWriter">
+            <result>bookInformation.jsp</result>
+        </action>
+        <action name= "updateBook" class="BookManagement.Book" method="findBook">
+            <result>/updateBook.jsp</result>
+        </action>
+        <action name= "updateBookResult" class="BookManagement.Book" method="updateBook">
+            <result name = "success">/success.jsp</result>
+            <result name = "noAuthor">/addAuthor.jsp</result>
+        </action>
+        <action name= "deleteBook" class="BookManagement.Book" method="deleteBook">
+            <result>/deleteBook.jsp</result>
+        </action>
+        <action name= "updateAuthor" class="BookManagement.Author" method="findAuthor">
+            <result>/updateAuthor.jsp</result>
+        </action>
+        <action name= "updateAuthorResult" class="BookManagement.Author" method="updateAuthor">
+            <result>/updateAuthorResult.jsp</result>
+        </action>
+    </package>
+</struts>

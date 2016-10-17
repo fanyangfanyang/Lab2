@@ -1,0 +1,20 @@
+body {background-image:url("images/background_image2.jpg");
+      background-size:100%;
+      background-repeat:no-repeat;
+      text-align:right;
+      font-family:STXingkai;
+      font-size:30px;
+      margin-right: 3cm;
+      margin-top: 4cm;
+      cursor:url('images/cursor/正常选择.ani'),auto;}
+      
+h3 {color:blue;
+    font-size:50px;}
+
+table {align:center}
+    
+a  { text-decoration:none;}
+a:hover  { background-color:#ffff33;
+           cursor:url('images/cursor/链接选择.ani'),auto;}
+           
+ul li {margin:20px 0} 
